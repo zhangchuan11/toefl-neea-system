@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>验证码测试页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .captcha-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .captcha-input {
+            flex: 1;
+        }
+
+        .captcha-image {
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 40px;
+            background: #f5f5f5;
+        }
+
+        .captcha-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .captcha-hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .alert {
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .alert.show {
+            display: block;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .info-box h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-box p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 验证码测试页面</h1>
+        
+        <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" placeholder="请输入用户名">
+        </div>
+
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" id="password" placeholder="请输入密码">
+        </div>
+
+        <div class="form-group">
+            <label for="captchaInput">验证码</label>
+            <div class="captcha-wrapper">
+                <input type="text" 
+                       id="captchaInput" 
+                       class="captcha-input" 
+                       placeholder="请输入验证码" 
+                       maxlength="4"
+                       autocomplete="off">
+                <img id="captchaImg" 
+                     class="captcha-image" 
+                     src="" 
+                     alt="验证码"
+                     title="点击刷新验证码">
+            </div>
+            <div class="captcha-hint">看不清？点击图片刷新</div>
+        </div>
+
+        <button class="btn btn-primary" onclick="handleLogin()">登录</button>
+        <button class="btn btn-secondary" onclick="refreshCaptcha()">刷新验证码</button>
+        <button class="btn btn-secondary" onclick="getCaptchaInfo()">查看验证码信息（调试）</button>
+
+        <div id="alertBox" class="alert"></div>
+
+        <div class="info-box">
+            <h3>📝 使用说明</h3>
+            <p>1. 输入任意用户名和密码</p>
+            <p>2. 输入图片中显示的验证码</p>
+            <p>3. 点击"登录"按钮进行验证</p>
+            <p>4. 验证码不区分大小写</p>
+            <p>5. 验证码 5 分钟后过期</p>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:3000/api';
+
+        // 刷新验证码
+        function refreshCaptcha() {
+            const timestamp = new Date().getTime();
+            // 调用 API 获取验证码 URL
+            fetch(`${API_BASE_URL}/captcha/image?t=${timestamp}`, {
+                credentials: 'include'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.url) {
+                    document.getElementById('captchaImg').src = data.url;
+                }
+            })
+            .catch(error => {
+                console.error('刷新验证码失败:', error);
+            });
+            document.getElementById('captchaInput').value = '';
+            console.log('验证码已刷新');
+        }
+
+        // 显示提示信息
+        function showAlert(message, type = 'info') {
+            const alertBox = document.getElementById('alertBox');
+            alertBox.className = `alert alert-${type} show`;
+            alertBox.textContent = message;
+            
+            setTimeout(() => {
+                alertBox.classList.remove('show');
+            }, 5000);
+        }
+
+        // 验证验证码
+        async function verifyCaptcha() {
+            const code = document.getElementById('captchaInput').value.trim();
+            
+            if (!code) {
+                showAlert('请输入验证码', 'error');
+                return false;
+            }
+
+            if (code.length !== 4) {
+                showAlert('验证码必须是4位', 'error');
+                return false;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/captcha/verify`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include', // 重要：包含 cookies
+                    body: JSON.stringify({ code })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showAlert('✅ ' + result.message, 'success');
+                    return true;
+                } else {
+                    showAlert('❌ ' + result.message, 'error');
+                    refreshCaptcha(); // 验证失败后刷新验证码
+                    return false;
+                }
+            } catch (error) {
+                console.error('验证失败:', error);
+                showAlert('网络错误，请检查后端服务是否启动', 'error');
+                return false;
+            }
+        }
+
+        // 处理登录
+        async function handleLogin() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            if (!username) {
+                showAlert('请输入用户名', 'error');
+                return;
+            }
+
+            if (!password) {
+                showAlert('请输入密码', 'error');
+                return;
+            }
+
+            // 先验证验证码
+            const captchaValid = await verifyCaptcha();
+            
+            if (captchaValid) {
+                // 这里可以继续执行登录逻辑
+                showAlert(`验证成功！用户 ${username} 可以继续登录流程`, 'success');
+                
+                // 清空表单
+                setTimeout(() => {
+                    document.getElementById('username').value = '';
+                    document.getElementById('password').value = '';
+                    document.getElementById('captchaInput').value = '';
+                    refreshCaptcha();
+                }, 2000);
+            }
+        }
+
+        // 获取验证码信息（调试用）
+        async function getCaptchaInfo() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/captcha/info`, {
+                    credentials: 'include'
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    const info = result.data;
+                    const message = `
+Session ID: ${info.sessionID}
+验证码: ${info.captcha || '未生成'}
+生成时间: ${info.captchaTime ? new Date(info.captchaTime).toLocaleString() : '无'}
+是否过期: ${info.expired ? '是' : '否'}
+                    `;
+                    alert(message);
+                    console.log('验证码信息:', result.data);
+                } else {
+                    showAlert(result.message, 'error');
+                }
+            } catch (error) {
+                console.error('获取信息失败:', error);
+                showAlert('获取验证码信息失败', 'error');
+            }
+        }
+
+        // 点击验证码图片刷新
+        document.getElementById('captchaImg').addEventListener('click', refreshCaptcha);
+
+        // 回车提交
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleLogin();
+            }
+        });
+
+        // 页面加载完成提示
+        window.addEventListener('load', function() {
+            console.log('验证码测试页面已加载');
+            console.log('API 地址:', API_BASE_URL);
+            // 页面加载时自动刷新验证码
+            refreshCaptcha();
+        });
+    </script>
+</body>
+</html>
+

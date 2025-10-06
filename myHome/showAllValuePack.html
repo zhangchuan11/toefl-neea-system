@@ -1,0 +1,624 @@
+<html><plasmo-csui id="codebox-csui"></plasmo-csui><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/extends/animate.min.css" rel="stylesheet">
+<!--[if lte IE 6]>
+<link href="/static/bootstrap/bsie/bootstrap-ie6.min.css" rel="stylesheet" media="screen">
+<![endif]-->
+<!--[if lte IE 7]>
+<link href="/static/bootstrap/bsie/ie.min.css" rel="stylesheet" media="screen">
+<![endif]-->
+<link href="/static/jquery/smallpop/jquery.smallipop.min.css" rel="stylesheet">
+<link href="/static/layer/skin/default/layer.min.css" rel="stylesheet">
+<link href="/static/laydate/theme/default/laydate.min.css" rel="stylesheet">
+<link href="/static/bootstrap/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="/static/responsive-tabs/responsive.tabs.min.css" rel="stylesheet">
+<link href="/static/toefl/css/toefl-theme.min.css?_v=1539045327617" rel="stylesheet">
+<link href="/static/bootstrap/table/bootstrap-table.css" rel="stylesheet">
+<title>我的托福网考主页 - 教育部教育考试院托福网上报名</title>
+<!--[if lt IE 9]><script r='m'>document.createElement("section")</script><![endif]--><link rel="stylesheet" href="https://toefl.neea.cn/static/layer/skin/default/layer.css?v=3.0.11110" id="layuicss-skinlayercss"><link rel="stylesheet" href="https://toefl.neea.cn/static/laydate/theme/default/laydate.css?v=5.0.9" id="layuicss-laydate"></head>
+<body>
+<div id="wg_topper"><div class="hidden-phone" style="background:#fff;max-height:12em;padding:.5em 0px;border-bottom: 1px solid #000000">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <div class="contactus">
+                    <i class="con-logo" aria-hidden="true"></i>
+                    <a href="/contactus_cn.html" style="font-weight:bolder;color: #000000" target="_blank">
+                        <span class="contact_us" style="display:inline-block"> 联系我们</span>
+                    </a>
+                    </div>
+            </div>
+            <div class="span3" style="max-height:35px;width:14em;float:right;text-align: right">
+                <a href="?locale=en_US" style="font-weight:bolder;font-size:12px;padding-top:.5em;display:inline-block;"><span class="icon-globe" style="vertical-align: top"></span> English
+                    Version</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="visible-phone" style="background:#f5f5f5;max-height:12em;padding:.5em;">
+    <div class="container" style="max-width:1050px;">
+        <div class="row">
+            <div class="span8">
+                <div class="contactus">
+                    <i class="con-logo" aria-hidden="true"></i>
+                    <a href="/contactus_cn.html" style="font-weight:bolder;" target="_blank">
+                        <span class="contact_us" style="display:inline-block;font-size:13px;"> 联系我们</span>
+                    </a>
+                    </div>
+            </div>
+            <div class="span3" style="max-height:35px;width:14em;">
+                <a href="?locale=en_US" style="font-weight:bolder;font-size:12px;padding-top:.5em;display:inline-block;"><span class="icon-globe" style="vertical-align: top"></span> English
+                    Version</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="headerN2" style="background:#fff;">
+    <div class="container">
+        <div class="row" style="position: relative;padding:.5em 0;z-index: 999">
+            <div class="span4" align="left" style="position: relative;padding:.5em;">
+                <div style="width:350px;">
+                    <div style="width:65px;display:inline-block"><a href="http://www.neea.cn" class="neealog_sty"></a>
+                    </div>
+                    <div style="display:inline-block"><a href="http://www.ets.org/toefl" target="_blank" class="etslogo_sty"></a>
+                    </div>
+                </div>
+                <span style="left:14px;top:60px;margin-left:0em;margin-top:-.5em;letter-spacing:1px;width:19em;display:block;font-size:14px;font-weight:bolder;color:#000">教育部教育考试院托福网考<sup>®</sup>考试报名</span>
+            </div>
+
+            <div class="span6 offset1" style="text-align: right;">
+                <div class="nav1_en hidden-phone">
+                    <ul>
+                        <li style="padding-left:1em;">
+                            <a href="javascript:void(0);" onclick="javascript:loadPageWithHashChange('#!/homepage',true);">
+                                <i></i>
+                                <span style="font-size:12px;">我的主页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examination_reg_cn.html" target="_blank">
+                                <i></i>
+                                <span>考试报名</span>
+                            </a>
+                            <div class="slidDown">
+                                <a href="/information_cn.html" target="_blank">考生须知</a>
+                                <a href="/process_cn.html" target="_blank">报名流程</a>
+                                <a href="/testCenters" target="_blank">考点列表</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/resources_cn.html" target="_blank">
+                                <i></i>
+                                <span>备考资源</span>
+                            </a>
+                            <div class="slidDown" style="display: none; opacity: 1;">
+                                <a href="http://www.toefl.cn/prep-material.php" target="_blank">备考资源</a>
+                                <a href="http://www.toefl.cn" target="_blank">托福网考<sup>®</sup>官网</a>
+                                <a href="https://www.toeflgoanywhere.org/search-who-accepts-toefl" target="_blank">目的地查询</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/faq_cn.html" target="_blank">
+                                <i></i>
+                                <span>常见问题</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/download_cn.html" target="_blank">
+                                <i></i>
+                                <span>表格下载</span>
+                            </a>
+                        </li>
+</ul>
+                </div>
+                <div class="main visible-phone" align="left" style="margin-top:1em;">
+                    <nav id="menu" class="nav_bar">
+                        <ul>
+                            <li><a href="/examination_reg_cn.html" target="_blank"><span>考试报名</span></a></li>
+                            <li><a href="/resources_cn.html" target="_blank"><span>备考资源</span></a></li>
+                            <li><a href="/faq_cn.html" target="_blank"><span>常见问题</span></a></li>
+                            <li><a href="/download_cn.html" target="_blank"><span>表格下载</span></a></li>
+</ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MXFPKL7"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MXFPKL7"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MXFPKL7"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MXFPKL7"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-LV4JL7BVSY&amp;cx=c&amp;gtm=4e5a20"></script><script type="text/javascript" src="/static/toefl/js/menu.min.js"></script>
+<script type="application/javascript">
+    $(function () {
+        $('[data-toggle="popover"]').popover({
+            'trigger': 'hover',
+            'html': true,
+            'content': function () {
+                return '<img src="/static/toefl/images/qrcode.png" width="160" height="163"/>';
+            }
+        });
+
+        $('[data-toggle="popover1"]').popover({
+            'trigger': 'hover',
+            'html': true,
+            'content': function () {
+                return '<img src="/static/toefl/images/wbcode.png" width="160" height="159"/>';
+            }
+        });
+        $("#btnReturn").click(function () {
+            window.location.href = "/";
+        });
+    });
+</script></div>
+<div style="background:#f7f7f7;margin-bottom:1em;" align="center">
+    <div class="container" align="center">
+
+    </div>
+</div>
+<div class="container">
+    <div class="row-fluid" id="candidatePanel" style="z-index: auto; position: static; top: auto;">
+        <div class="span12 well">
+            <div class="row-fluid">
+                <div class="span7">
+                    <p style="color:#333;font-size:16px;margin-bottom:.5em;">
+                        <span style="font-size:18px;font-weight:bolder;color:#343579;">
+                            李金萱，LI &nbsp; JINXUAN</span>
+                        <span style="color:#333;margin-left: 1em;">欢迎登录教育部教育考试院托福网考<sup>®</sup>考试报名网站</span>
+                    </p>
+                    <div style="color:#333;font-size:14px;">
+                        <div class="myhome_info_cn">
+                            <span style="font-weight:600;font-size:14px;"><em>NEEA ID:</em></span>
+                            <span style="font-size:14px;color: #666;">21610904</span>
+                        </div>
+                        <div class="myhome_info_cn"><span style="font-weight:600;font-size:14px;"><em>ETS ID:</em></span>
+                                <span style="font-size:14px;color: #666;">
+                                        73F6C6HD</span>
+                            </div>
+                        <div class="myhome_info_cn">
+                            <span style="font-weight:600;font-size:14px;"><em>账户余额:</em></span>
+                            <span id="balanceRefreshField" style="font-weight: normal; color: #666; font-size:14px;">RMB¥1,050.00</span>
+                        </div>
+                    </div>
+                    <div style="color:#333;font-size:14px;margin-top:5px;">
+                        <div class="myhome_info_cn">
+                            <span style="font-weight:600;font-size:14px;"><em>性别:</em></span>
+                            <span style="font-size:14px;color: #666;">
+                                女</span>
+                        </div>
+                        <div class="myhome_info_cn">
+                            <span style="font-weight:600;font-size:14px;"><em>出生年月日:</em></span>
+                            <span style="font-size:14px;color: #666;">2008-03-04</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span1" style="padding-top:5px;width:67px;height:67px;margin-bottom:0.5em">
+                    <img alt="qrcode" src="/static/toefl/images/qrCodeNew.png" width="80" height="80" style="display: inline-block;">
+                </div>
+                <div class="span2">
+                    <span style="padding-top:10px;width:200px;">扫码添加【托福官方福利官】微信，领取备考资料，获取托福考试一手信息。</span>
+                </div>
+                <div class="span2">
+                    <a href="/login.html" class="pull-right" style="margin-top:1.5em;background: #ff8f60;padding:6px 12px"><i class="fa fa-sign-out" aria-hidden="true">退出登录</i></a>
+                </div>
+            </div>
+        </div>
+    </div><div style="display: none; width: 1170px; height: 144px; float: none;"></div>
+</div>
+<div class="container">
+    <div class="row-fluid" id="mainPanel">
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span2 hidden-phone">
+                    <ul class="nav nav-pills nav-stacked myhome_text_cn" id="wg_west" style="z-index: auto; position: static; top: auto;">
+                        <li class="active"><a href="#section-1" style="border: none"><i class="fa fa-user-circle-o" aria-hidden="true"></i> 个人信息</a></li>
+                        <li style="text-align:center"><a href="./profileInfo.html">查看个人信息</a>
+                        </li><li style="text-align:center"><a href="profileUpdatePassword.html">更改登录密码</a></li>
+                        <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> 财务信息</a></li>
+                        <li style="text-align:center"><a href="./showPayment.html">付款</a></li>
+                        <li style="text-align:center"><a href="./showRefund.html">申请退款</a></li>
+                        <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-trello" aria-hidden="true"></i> 托福网考<sup>®</sup>复习套餐</a></li>
+                        <li style="text-align:center"><a href="showAllValuePack.html">订购复习套餐</a></li>
+                        <li style="text-align:center"><a href="showCreatedValuePack.html">查看复习套餐</a></li>
+                        <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-trello" aria-hidden="true"></i> 托福网考<sup>®</sup>报名</a></li>
+                        <li style="text-align:center"><a href="./showVoucher.html">绑定代金券</a></li>
+                            <li style="text-align:center"><a href="#" onclick="">考位查询</a></li>
+                            <li style="text-align:center"><a href="#" onclick="">注册考试</a></li>
+                        <li style="text-align:center"><a href="#" onclick="">查看已注册考试</a></li>
+                        <li style="text-align:center"><a href="postTest.html">查看成绩</a></li>
+                    </ul><div style="display: none; width: 170px; height: 495px; float: none;"></div><div style="display: none; width: 170px; height: 495px; float: none;"></div>
+                    </div>
+                    <div class="span3 visible-phone">
+                        <ul class="nav nav-pills nav-stacked myhome_text_cn" id="wg_west" style="z-index: auto; position: static; top: auto;">
+                            <li class="active"><a href="#section-1" style="border: none"><i class="fa fa-user-circle-o" aria-hidden="true"></i> 个人信息</a></li>
+                            <li style="text-align:center"><a href="./profileInfo.html">查看个人信息</a>
+                            </li><li style="text-align:center"><a href="profileUpdatePassword.html">更改登录密码</a></li>
+                            <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> 财务信息</a></li>
+                            <li style="text-align:center"><a href="./showPayment.html">付款</a></li>
+                            <li style="text-align:center"><a href="./showRefund.html">申请退款</a></li>
+                            <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-trello" aria-hidden="true"></i> 托福网考<sup>®</sup>复习套餐</a></li>
+                            <li style="text-align:center"><a href="showAllValuePack.html">订购复习套餐</a></li>
+                            <li style="text-align:center"><a href="showCreatedValuePack.html">查看复习套餐</a></li>
+                            <li class="active"><a href="#section-4" style="border: none"><i class="fa fa-trello" aria-hidden="true"></i> 托福网考<sup>®</sup>报名</a></li>
+                            <li style="text-align:center"><a href="./showVoucher.html">绑定代金券</a></li>
+                                <li style="text-align:center"><a href="#" onclick="">考位查询</a></li>
+                                <li style="text-align:center"><a href="#" onclick="">注册考试</a></li>
+                            <li style="text-align:center"><a href="#" onclick="">查看已注册考试</a></li>
+                            <li style="text-align:center"><a href="postTest.html">查看成绩</a></li>
+                        </ul><div style="display: none; width: 170px; height: 495px; float: none;"></div>
+                    </div>
+                    <div class="span10">
+                        <div id="wg_center" style="border-radius:3px;">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="_csrf" content="">
+    <!-- Global site tag (gtag.js) - Google Ads: 1015438398 -->
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-MXFPKL7');</script>
+<!-- End Google Tag Manager -->
+<title>购买套餐 - 教育部教育考试院托福网上报名</title>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXFPKL7"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><fieldset>
+    <legend>
+        <strong style="color: #343579">购买托福网考<sup>®</sup>复习套餐</strong>
+    </legend>
+</fieldset>
+<div class="alert alert1_color">
+    <ul class="cirSolid">
+        <li>考生成功购买托福网考<sup>®</sup>复习套餐后不能取消。</li>
+            <li>一条有效且未过期考试记录只能用于订购一次托福网考<sup>®</sup>复习套餐（TPO或Premium）。如果考生已经订购了一项托福网考<sup>®</sup>复习套餐想再次订购时，必须有另一场有效且未过期的考试记录。托福网考<sup>®</sup>复习套餐（Prep）不受有效且未过期的考试记录限制。</li>
+        <li>使用折扣后考试费注册的考试，退考后可退还折扣后报名费的一半。</li>
+    </ul>
+</div>
+<div class="alert alert-error alert5_color" style="font-size: 13px; display: none;" id="errorSpan">
+    <p id="returnMsg"></p>
+</div>
+<div class="normal">
+    <div class="myhome_t_tab">
+        <span>请选择您要购买的托福网考<sup>®</sup>复习套餐种类：</span>
+    </div>
+    <table class="table table-bordered table-hover" style="line-height: 1.5em;">
+        <tbody>
+        <tr>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                    <strong>托福网考<sup>®</sup>复习套餐（TPO）</strong></td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;"><strong style="color: #333">费用：</strong>
+                    <span id="price1VP384" class="moneyFormatField" style="color: #ff4200">RMB¥226.00</span>
+                </td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                        
+                                    您还没有有效报考记录，<br>如需购买复习套餐请先注册
+                                    <input type="button" class="footer_butt_sign_up" value="托福网考®考试" onclick="showReminderInValuePack('IBT')">
+                                    </td>
+                </tr>
+            <tr>
+                <td colspan="3">
+                    <ul class="pack_line">
+                        <li>项目1 - 托福在线练习</li>
+                        </ul>
+                </td>
+            </tr>
+        <tr>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                    <strong>托福网考<sup>®</sup>复习套餐（Prep） without Registration</strong></td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;"><strong style="color: #333">费用：</strong>
+                    <span id="price0VP618" class="moneyFormatField" style="color: #ff4200">RMB¥395.00</span>
+                </td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                        <input type="button" name="btnConfirm" value="购买" class="btn_login">
+                                    <input type="hidden" value="618">
+                                    <input type="hidden" value="0">
+                                </td>
+                </tr>
+            <tr>
+                <td colspan="3">
+                    <ul class="pack_line">
+                        <li>项目1 - 托福考试官方指南（电子版）</li>
+                        <li>项目2 - 托福在线练习</li>
+                        </ul>
+                </td>
+            </tr>
+        <tr>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                    <strong>托福网考<sup>®</sup>复习套餐（Premium）</strong></td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;"><strong style="color: #333">费用：</strong>
+                    <span id="price1VP619" class="moneyFormatField" style="color: #ff4200">RMB¥1,086.00</span>
+                </td>
+                <td style="background-color: #f8f8f8; font-weight: bolder; text-align: left;">
+                        
+                            余额不足，如需购买请先付款
+                            <button type="button" name="btnPay" class="btn_login" onclick="loadPageWithHashChange('#!/finance/showPayment',true)">进入付款页面
+                            </button>
+                        </td>
+                </tr>
+            <tr>
+                <td colspan="3">
+                    <ul class="pack_line">
+                        <li>项目1 - 托福考试官方指南（电子版）</li>
+                        <li>项目2 - 托福在线练习</li>
+                        <li>项目3 - 5份托福网考<sup>®</sup>额外成绩单寄送(此优惠在购买套餐后一年内有效)</li>
+                        <li>项目4 - 再次报名时考试费可优惠￥269(此优惠在购买套餐后一年内有效)</li>
+                        </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form id="payForm" action="/myHome/21610904/valuePack/showAllValuePack" method="post"><input type="hidden" name="_ajax" value="true">
+        <input type="hidden" value="" id="vpType" name="vpType">
+        <input type="hidden" value="" id="needOrder" name="needOrder">
+    </form></div>
+
+<script type="text/javascript">
+    $(".moneyFormatField").each(function () {
+        formatCurrency($(this).attr("id"), $(this).html());
+    });
+    $(":button[name='btnConfirm']").click(function () {
+        var vpType = $(this).nextAll(":hidden:eq(0)").val();
+        var needOrder = $(this).nextAll(":hidden:eq(1)").val();
+        var lable = $(this).parents("tr").find("td:eq(0) strong").html();
+        var price = $(this).parents("tr").find("td:eq(1) span").html();
+        $("#vpType").val(vpType);
+        $("#needOrder").val(needOrder);
+        layer.open({
+            //title: "托福套餐",
+            title: "托福网考<sup>&reg;</sup>套餐",
+            btn: ["确定", "取消"],
+            icon: 3,
+            content: "购买套餐将要扣除 <font style='color:#ff4200;'>" + price + "</font>，<br/>您确定要购买<font style='color:#ff4200;'>" + lable + "</font>吗？",
+            btn1: function (cindex) {
+                layer.close(cindex);
+                $.ajax({
+                    type: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $("meta[name='_csrf']").attr("content")
+                    },
+                    dataType: 'json',
+                    url: "valuePack/createValuePack",
+                    data: $("#payForm").serialize(),
+                    success: function (data) {
+                        if (data.errorCode != null) {
+                            $("#errorSpan").show();
+                            $("#returnMsg").text(data.errorMessage);
+                        } else {
+                            layer.open({
+                                //title: "托福套餐",
+                                title: "托福网考<sup>&reg;</sup>套餐",
+                                btn: ["确定"],
+                                icon: 1,
+                                content: "订购套餐成功",
+                                btn1: function () {
+                                    layer.closeAll();
+                                    getBalance();
+                                    loadPageWithHashChange('#!/valuePack/showCreatedValuePack', true);
+                                }
+                            });
+                        }
+                    }
+                });
+            },
+            btn2: function (cindex) {
+                layer.closeAll();
+            }
+        });
+    })
+</script>
+
+</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="wg_footer" style="margin-top: 10px" align="center"><div style="height:26px;background: #f7f7f7;height:100%;border-top: 8px solid #dadcff;" align="center"></div>
+<div class="container" style="background:#fff;padding:2em 0px;">
+    <div class="row-fluid">
+        <div class="span10 offset1" style="padding:0 0em">
+            <div class="row">
+                <div class="span3 men2"><a href="/examination_reg_cn.html" target="_blank">考试报名</a></div>
+                <div class="span3 men3"><a href="/resources_cn.html" target="_blank">备考资源</a></div>
+                <div class="span3 men1"><a href="/faq_cn.html" target="_blank">常见问题</a></div>
+                <div class="span3 men6"><a href="/download_cn.html" target="_blank">表格下载</a>
+                </div>
+            </div>
+            <hr>
+            <span style="display:inline-block;font-size:14px;font-weight: bold;margin-bottom: 1em">关注托福: </span>
+
+            <div class="wx_bg" style="margin-left:0em;display:inline-block;vertical-align:middle;">
+                <a href="#" data-toggle="popover" data-trigger="focus" data-placement="right" data-original-title="" title=""><img data-src="/static/bootstrap/assets/holder.min.js/300*200" src="" class="img-circle" alt="">
+                </a>
+            </div>
+            <div style="display: inline-block;border-left: 1px solid #000;height:16px"></div>
+            <div class="xhs_bg" style="margin-left:0em;display:inline-block;vertical-align:middle">
+                <a href="#" data-toggle="popover1" data-trigger="focus" data-placement="right" data-original-title="" title=""><img data-src="/static/bootstrap/assets/holder.min.js/300*200" src="" class="img-circle" alt="">
+                </a>
+            </div>
+            <div style="display: inline-block;border-left: 1px solid #000;height:16px"></div>
+            <div class="blb_bg" style="margin-left:0em;display:inline-block;vertical-align:middle">
+                <a href="#" data-toggle="popover1" data-trigger="focus" data-placement="right" data-original-title="" title=""><img data-src="/static/bootstrap/assets/holder.min.js/300*200" src="" class="img-circle" alt="">
+                </a>
+            </div>
+            <div style="display: inline-block;border-left: 1px solid #000;height:16px"></div>
+            <div class="dy_bg" style="margin-left:0em;display:inline-block;vertical-align:middle">
+                <a href="#" data-toggle="popover1" data-trigger="focus" data-placement="right" data-original-title="" title=""><img data-src="/static/bootstrap/assets/holder.min.js/300*200" src="" class="img-circle" alt="">
+                </a>
+            </div>
+            <div style="height:2em;"></div>
+            <div align="center">
+                <div class="row-fluid" style="width:100%">
+                    <div>Copyright © 2025 ETS. TOEFL, TOEFL iBT, 托福，托福网考 and MYBEST are registered trademarks of ETS in the United States and other countries. The Eight-Point logo and TOEFL TestReady are trademarks of ETS.</div>
+                    <div>All are used under license in the People's Republic of China by the National Education Examination Authority pursuant to a license from Educational Testing Service.<strong>教育部教育考试院版权所有 保留所有权利</strong><span style="padding-left: 2em;">Powered By: A8R17660</span></div>
+                </div>
+</div>
+        </div>
+    </div>
+</div>
+<script type="application/javascript">
+    $(function () {
+        $('[data-toggle="popover"]').popover({
+            'trigger': 'hover',
+            'html': true,
+            'content': function () {
+                return '<img src="/static/toefl/images/qrcode.png" width="160" height="163"/>';
+            }
+        });
+
+        $('[data-toggle="popover1"]').popover({
+            'trigger': 'hover',
+            'html': true,
+            'content': function () {
+                return '<img src="/static/toefl/images/wbcode.png" width="160" height="159"/>';
+            }
+        });
+    });
+</script></div>
+<div id="identificationRequirement" style="padding: 2em; display: none">
+    <p>
+        <b>报考中国大陆地区托福网考<sup>®</sup>，考生所用证件在考试当天必须在有效期内，并符合以下要求：</b>
+    </p>
+    <p>
+        <span>• <strong>中国大陆考生</strong>必须使用有效期内的居民身份证报名，这是唯一接受的身份证件。<br></span>
+        <span>• 中国香港特别行政区、中国澳门特别行政区考生须使用港澳居民身份证、港澳居民居住证、中国香港护照、中国澳门护照报名。<br></span>
+        <span>• 中国台湾地区考生必须使用台湾居民来往大陆通行证、台湾居民居住证报名。<br></span>
+        <span>• 非中国籍考生使用护照或中华人民共和国外国人永久居留身份证报名。证件须清晰、明确显示考生的姓名、本人近期照片。护照还需清晰明确显示本人签名，并带有中国入境签证（中国给予免签证待遇国家的护照除外）和中国边境入境签章。请考生确保报名时提交的国籍/居住地信息与所持证件国家一致。<br></span>
+        <span id="idRequirement_mainland_passport" style="display: none;color: red;">请联系我们审核您的证件。<br></span>
+        <span><strong>特别提示：</strong><br></span>
+        <span>• 考生在考试当天须出示与报名所用证件完全一致且有效的身份证件原件，确保证件信息与报名信息完全一致（港澳考生需确保证件中的拼音或英文姓名与报名信息完全一致）、证件照片与本人相貌一致、考试当天证件在有效期内，中国大陆考生还须确认有效期内的居民身份证芯片读取功能正常。<br></span>
+        <span>• 请考生在考前确认证件是否符合上述要求，如有疑问，请最迟于考前一周工作日拨打托福网考<sup>®</sup>报名网站咨询电话。考试当天不予受理。<br></span>
+        <span>• 考生如无法出示符合要求的证件将被拒绝参加考试，不予退还考试费或免费转考。</span>
+    </p>
+</div>
+<div id="preventionReminder" style="padding: 2em; display: none">
+    <p style="text-indent:2em;">请考生仔细阅读本须知并遵照执行。</p>
+    <p style="text-indent:2em;"><strong><a href="https://news.neea.cn/TOEFL/1/news20200827AllInfo.html" style="text-decoration: underline" target="_blank">密切关注考点入校/入场要求</a></strong></p>
+    <p style="text-indent:2em;">考生在报名前和参加考试前应密切关注考点的入校须知。</p>
+    <p style="text-indent:2em;"><strong>遵守考点防疫要求</strong></p>
+    <p style="text-indent:2em;">参加考试时考生应遵守考点的入校/入场要求，积极配合考点的防疫工作流程。如有额外费用产生，考生需自行承担。</p>
+    <p style="text-indent:2em;"><strong>因疫情原因无法参加考试的处理办法</strong></p>
+    <p>
+        </p><ul class="cirSolid" style="padding-left:1.5em;">
+            <li>考生如在考前获知因不符合考点入校/入场要求，或因疫情无法正常出行而不能参加考试，可于考前7天内登录报名网站个人主页，在查看已注册考试页面按提示申请全额退考。审核通过后，全额考试费（人民币2100元）将于考试日前退回至考生的NEEA账户。<br>请注意：申请截止时间为考前1个工作日的中午12点。</li>
+            <li>考生如在考试当天因不符考点入校/入场要求被拒考并已在考点登记，无需另行申请退费，考试费（人民币2100元）将退回至考生NEEA账户。</li>
+            <li>如有疑问，欢迎致电托福网考<sup>®</sup>报名网站咨询电话：<br>
+                电话：010-82345672（周一至周五：08:30–12:00；13:00–16:30 国家法定节假日除外）<br>
+                考试日服务电话：010-83020304（仅限考试日开通，上午场：7:30–11:30；下午场：12:30–16:30）<br>
+                或发送邮件至托福网考®咨询邮箱: ibtcsr@mail.neea.edu.cn。
+            </li>
+        </ul>
+    <p></p>
+</div>
+
+<div>
+    <iframe id="traceCode" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</div>
+<form id="paymentForm" class="form-horizontal" action="finance/doPay" method="POST" target="_blank"><input type="hidden" name="balance" id="balance" value="">
+    <input type="hidden" name="difference" id="difference" value="0">
+    <input type="hidden" name="hiddenAmount" id="hiddenAmount" value="">
+    <input type="hidden" name="details" id="details" value="">
+    <input type="hidden" name="payType" id="payType" value="payDirect">
+</form><script type="text/javascript" src="/static/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/static/jquery/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap/js/bootstrap-better-typeahead.min.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/html5shiv/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/static/bootstrap/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap/datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="/static/layer/layer.min.js"></script>
+<script type="text/javascript" src="/static/jquery/scrolltofixed/jquery-scrolltofixed.min.js"></script>
+<script type="text/javascript" src="/static/jquery/jquery.formatCurrency.min.js"></script>
+<script type="text/javascript" src="/static/jquery/jquery.formatCurrency.zh.min.js"></script>
+<script type="text/javascript" src="/static/toefl/js/autoScroll.min.js"></script>
+<script type="text/javascript" src="/static/jquery/hashchange/jquery.hashchange.min.js"></script>
+<script type="text/javascript" src="/static/jquery/validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/jquery/smallpop/jquery.smallipop.min.js"></script>
+<script type="text/javascript" src="/static/jquery/jsrender/jsrender.min.js"></script>
+<script type="text/javascript" src="/static/extends/moment/moment.min.js"></script>
+<script type="text/javascript" src="/static/extends/moment/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="/static/toefl/js/msg_cn.min.js"></script>
+<script type="text/javascript" src="/static/toefl/js/msg_en.min.js"></script>
+<script type="text/javascript" src="/static/toefl/js/base.min.js?_v=1539364268775"></script>
+<script type="text/javascript" src="/static/toefl/js/passwordStrength.min.js"></script>
+<script type="text/javascript" src="/static/responsive-tabs/responsive.tabs.min.js"></script>
+<script type="text/javascript" src="/static/toefl/js/scrollBoard.min.js"></script>
+<script type="text/javascript" src="/static/laydate/laydate.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap/table/bootstrap-table.js"></script>
+<script type="text/javascript" src="/static/jquery/fileupload/vendor/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="/static/jquery/fileupload/jquery.iframe-transport.min.js"></script>
+<script type="text/javascript" src="/static/jquery/fileupload/jquery.fileupload.min.js"></script>
+
+<script type="application/javascript">
+    $(function () {
+        if(location.hash == '' || location.hash == '#!/homepage'){
+            loadPageWithHashChange("#!/homepage", true);
+        }
+        $("#candidatePanel").scrollToFixed({});
+        
+            $("#wg_west").scrollToFixed({
+                marginTop: $("#candidatePanel").outerHeight(true),
+                limit: function () {
+                    var limit = $('#wg_footer').offset().top - $(this).outerHeight(true) - 10;
+                    return limit;
+                },
+                zIndex: 999
+            });
+        
+
+        formatCurrency('balanceRefreshField', '105000');
+
+        
+            $("#wg_west li a").each(function (index, item) {
+                var href = $(this).attr("href");
+                if (href.indexOf("#!") == 0) {
+                    loadPageWithHashChange(href);
+                    $(this).click(function () {
+                        loadPageWithHashChange(href, true);
+                    });
+                }
+            });
+        
+
+        loadPageWithHashChange("#!/profile/profileUpdatePostInfo");
+        loadPageWithHashChange("#!/profile/profileUpdateEmailAddress");
+        loadPageWithHashChange("#!/profile/profileUpdateMobile");
+        loadPageWithHashChange("#!/testSeat?testType=IBT");
+        loadPageWithHashChange("#!/testSeat?testType=PDT");
+        loadPageWithHashChange("#!/createOrder/querySeat?testType=IBT");
+        loadPageWithHashChange("#!/createOrder/querySeat?testType=PDT");
+        loadPageWithHashChange("#!/preTest");
+        loadPageWithHashChange("#!/onlineService/showOnlineServiceHomepage");
+        loadPageWidget("topperLogin", "#wg_topper", true);
+        loadPageWidget("footer", "#wg_footer", true);
+
+        // var axel = Math.random() + "";
+        // var a = axel * 10000000000000;
+        // var url = "https://1559855.fls.doubleclick.net/activityi;src=1559855;type=toefl0;cat=toefl002;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=" + a + "?";
+        // $("#traceCode").attr("src", url);
+    });
+</script>
+
+<div class="smallipop-instance" id="smallipop1" style="opacity: 0;"><div class="smallipop-content"></div></div><script type="text/javascript" id="" charset="">window.dataLayer=window.dataLayer||[];window.v4fnt1=function(b,a,c,d){dataLayer.push({event:"dle_tmtk1",v_en:a?String(a).toLowerCase().replace(/\s+/g,"_"):"toefl_event",v_ec:b,v_ea:a,v_el:c,v_pf:d})};</script></body></html>

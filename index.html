@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="/static/bootstrap/css/bootstrap-responsive.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/font-awesome/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<link href="/static/extends/animate.min.css" rel="stylesheet" />
+		<!--[if lte IE 6]>
+			<link
+				href="/static/bootstrap/bsie/bootstrap-ie6.min.css"
+				rel="stylesheet"
+				media="screen"
+			/>
+		<![endif]-->
+		<!--[if lte IE 7]>
+			<link
+				href="/static/bootstrap/bsie/ie.min.css"
+				rel="stylesheet"
+				media="screen"
+			/>
+		<![endif]-->
+		<link
+			href="/static/jquery/smallpop/jquery.smallipop.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/layer/skin/default/layer.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/laydate/theme/default/laydate.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/bootstrap/datetimepicker/css/bootstrap-datetimepicker.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/responsive-tabs/responsive.tabs.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/toefl/css/toefl-theme.min.css?_v=1539045327617"
+			rel="stylesheet"
+		/>
+		<link
+			href="/static/bootstrap/table/bootstrap-table.css"
+			rel="stylesheet"
+		/>
+
+		<meta
+			content="dmKLx6TjkH4bxgGCDpdmpGtBXG.AceAZun2XF8at8KQNQ6bsFS5i22o9D_YKpBVU3tuPSPqsXFMfACOFFR57FA"
+			r="m"
+		/>
+		<!--[if lt IE 9
+			]><script r="m">
+				document.createElement('section')
+			</script><!
+		[endif]-->
+		<script type="text/javascript" r="m">
+			$_ts = window['$_ts']
+			if (!$_ts) $_ts = {}
+			$_ts.nsd = 12276
+			$_ts.cd =
+				'qhWerrAlW10qcGAmHqqzqP0kcfGzrGLlqn0QqAGZqc0chAWtDkaqhAlzoGL3Hqqzrc0mcfGTrsEErkWZqc0ohAAtDkaqhAEzqaLqhA3trqWZqc0lhAVtDc0qlGAmHqqzrfQBm1QncAAShpGtrqVZqc0mhAEtDc0qqAG9qc0DhAQtDkaqhAVzqGL3xqqUhaLZqc0lhAVtDkVmWfElDkaqhA3zraL3Hqqzr10ccfGzqALlqP0DpPnIqsVSqGVnHRZOHQ6C9Gxaj9QsPor1A2RpOF0hn4ltOl53jOmWZ0ZO430krAEorqPac3J881V0pwVSw2ThQbx7domVJmwrpYu61TS0EkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2Itn3d0VRRW2JUATB1pkzfpDY6KeSoVK2uxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcXL1Yx9pVgeIB2GVmpUYOWg06wWYkJqxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTcYCfoQVwe5blzUswcADBspm30F6wTt_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nmcFDR8Ib.qFUASKvqSHjRJwvJXIKxEBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnmoWlz1RBy.K02x3cNS0oYMtCJ0w9d5Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnwosuEvSKqSFmrEwvOus9mKF0fw8QznEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe8t1rrUl63QKebRkwcI7f.RVN.36YEZCrcxufQFvuuMne.wCzLxImCMC9XFUm2ZnezQDy.tDIjMCe3hPYkAwS_soRmpmYf.kJoVkx3WUbBUor9EkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2ItnRidm2yJTRSVTXvVoYCs2eoAjeTFCpOxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcB3QmrrQsJtR_wyRD0nYOTw.Tl0wDTDxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTtY9m71bxRjswCMlm6wCKv1DSw1mekt_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nmxJbehR9MvJbrLWspssteCAVJaH0fLBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnmiVVfq882zMlSGYTzZ5m2qMopkM2.3Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnwiU2rcnvY_FvmHYTbXWTNzpopDF7ecEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe8t1rEQ6OthKSdwKJsY7Tii9wOWby94lpPxufQFvuuMne.wCzLxImCMC9XFUm2ZnezQDy.tDIjMCe3hPYVRjfqsbejH0ejdDQTsYfYFbMoRKRcEkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2ItnRMT2zpRTTmsuCbR2NcRP2VKtwt19pOxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcBhs9STs6pSUiSR8OTWsDRRjmmGIkNCxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTYAKzAJ6xMZKevwKwrMlOR3DmdsbNkt_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nmYAumUHooqQCxHJ0pPs_Tri6ezQsYLBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnmIWUp5sXw0WkA6wYrr5VrBRkRaWmO8Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnw3A0Y401TN32NEQKkeVbSf89em1zSlEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe8t1r3JC6H1kpcWueQHtytWCyW1lNQ4mrlxufQFvuuMne.wCzLxImCMC9XFUm2ZnezQDy.tDIjMCe3hPYMH5y6FKy2wKYqSCf.svxjsCnjFDTlEkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2ItnR..Vw9U6mfWlU.s6rhVOmzKJrhFYSkxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcBeY0NIATpLYBxKF0RlUYJH09Q6I0SCxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTGp9fEAoYK5CYh3omWsodJYDpWR9zkt_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nm2JDef3udLMYNo1922RzSyYlf7I0ziBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnmO1ly58zSNs6wlUv0ddUmislTCWDU8Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnw.QkSQT2azYvp.1u4wFsYNJ0eGR7SnEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe8t1rXIKCLAKAnJUxSHtG_QsmHYVeBNTwcxufQFvuuMne.wCzLxImCMC9XFUm2ZnezQDy.tDIjMCe3hPYLshmmYUJ1wUmzjkYCHsl6V9MyVlrlEkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2ItnR25DwfFbyxRb.nsOxhFOYfHwzvVvJOxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcBnRYS6W6eWVZY689N.1oJ5dDG4VUJCxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTXRmRHHbeuuTrFWoJ6sYHyiTSc3Kp2t_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nmzAoGdMvuDQKYqADrjU7LSWCm432SiBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnm.sUx7iBrCK9ESIYYPSVxa39YSpu43Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnwzQYzO0CeqJvm8VD.uJ9pwVoRUIwpPEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe8t1rTpKI.sKSNwkpPizYAi9rKIbSWNvwcxufQFvuuMne.wCzLxImCMC9XFUm2ZnezQDy.tDIjMCe3hPYCsWr7ibmgpVVe4ORNVsq5I96iiCw0EkTIR5NBMn27Qbf27CTCFKg.FvuuMne.wCzLxImCMC2ItnR40CRT19S0FlCNwDYSs0J.UHguUleOxsy1ZURBF1yNQKUuhCTaMb7LR5NBMn27Qbf27CTCFKyFtcBzRlp6w0ae3XNQJ2JWA9wjC0eRpDfbxOHlMURNMPzjIHJBhCz6FCG2ZURBF1yNQKUuhCTaMbzRxMTaAKRrQKTl0YSYw0fSVK_SFT7eAsrmt_Y3MUrXFnfv_beBtKSnFDKuMURNMPzjIHJBhCz6FCfV7nm63lTuA9OC1KrYY2wmxeyiA930W0YgBs23F6w.FcUSwbeNhb2SRIWBMUrXFnfv_beBtKSnFDUchnmuJVWn8_2ARvxTskSt0UA4pCguWKB5Es28MoxLRMJzwb2XtCNZZCZBF6w.FcUSwbeNhb2SRIJ8hnw4wlTKu2JsR0zKUVPBUkzG1mYvFZNnEseRFUm2ZnezQDy.tDIjMCZNMoxLRMJzwb2XtCNZZCe88cyNQKUuUG9lklTh8i0_JuJaHlSt_mNLUlYEHChyK0fxWKm5Wzmip6RuMUAaNlScHD9CQ9oNim2wplmfRHfVAOwM1OekusxfFkR7Wmo31uQ53lJOMW3aY2Y7wvaaNoNSVomTw98NFCpewc2bFd9_JOAatKy_NkJoVTxTW9HuY9zh1P2bFd9_JOAatKy_NlT.HDYOQsCXVKYsYP2bFd9_JOAatKy_NlN0MOQa12vQAv2Qsc2X8jpYsVTrIKmm5Dfl1bGZVbCvs9NjW6YX1jytimp6VKwqS2mz39J5QOtbiuE0V0mGQIJuFs37RKRBNO3nJnSzwuh1VK3nJ0eBABEawCg7RKRBNO3nJnSzwutS3KmOiuETi4mNQqVcraVyvaE4rprBQo6BQk9uJOgSWFQ_WOZCWuQxbKmf3u7nJAbQJsASqG0TiFG6JkanWuAyvaQ6WuEdrr2UoZqG_ZZ1_dNTy32Sc8XMvSJVxfPNSrcW2ajFqAArcyGoqnUojl_Fenqs4Es_aF_eYaE_Qo5vfrBHXfdAC9T594n.caEJJs_LJu70WOWnixZcWaVEJOWZNOV4WO7TWGbIqaWmqGQmiRZcJqsTWog2dbxGtKJjwPU5QDgN36mzxITPFc2GRvq2dKyutKrXFPUZhCr93czv8XaB3oR0tCwbZPeGwUE.3DO.hCwNMPzGRBaBRCNCtCrbdo7B3oNPtDuawneOMb3LMdJGhCJzF1fBZoQB3CTNQcUgRClNRKyPxIfyhCxjFcffZ6WBMUx6tDo.3ce73KGL3HmjhCS731fGZUqBMomLtDH7hC29QczX8IGBFUYv3cfO4DSztKfbQbPuMCNvhbz.M.JXFblXFvAe7CyuRcyjWDPuMvWChbN0M.JXFoWXFbzz7Cy7QnyjMK1uMvJThbN63hJXQCr2tCz.e1e7RvL.FC4ghCSN3cz.RILBMom9t6pa76J_RPy6RUjuQCpLhvw0RhJuQ63Xw6pe76Jv3ny6wo6vh6J.R1z03HaBQC2.t6p_5nenMDA.wU6vh6m9hvYNx8TPMP2aFvx.76mb3PyT3UjuQUwOhvY284JaMc2SRKG24DY4tUmaR1U7wDVNQUmOx8S_Qc2CRv32_CxytURX3PU.FbYOhvJ.85TbMUlXQ6Se76w63nySwCCuwUrChvm6I.JT8ClXQDzB51e0FbpfJPULMvVNwKN2x8fPw12Tw6Q2yCmXtUN6F1UvM6qN8bz6QMJ4QD9XIC22769BICz6tDOBFceTMby6IMJjQCAcraAJacw2wqEkKn6qsGWrU1J7HRZoUcmORqAE.GWrWsAorsbIqOE'
+			if ($_ts.lcd) $_ts.lcd()
+		</script>
+		<script
+			type="text/javascript"
+			charset="utf-8"
+			src="/JR1bm4k4XGH4/0DVPr6JlUHNH.bbf9512.js"
+			r="m"
+		></script>
+		<script>
+			;(function (w, d, s, l, i) {
+				w[l] = w[l] || []
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js',
+				})
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : ''
+				j.async = true
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+				f.parentNode.insertBefore(j, f)
+			})(window, document, 'script', 'dataLayer', 'GTM-MXFPKL7')
+		</script>
+
+		<title>首页 - 教育部教育考试院托福网上报名</title>
+		<style>
+			.custom-date-picker .layui-laydate-footer {
+				color: #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-MXFPKL7"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<div id="wg_topper">
+			<div
+				class="hidden-phone"
+				style="
+					background: #fff;
+					max-height: 12em;
+					padding: 0.5em 0px;
+					border-bottom: 1px solid #000000;
+				"
+			>
+				<div class="container" style="max-width: 1050px">
+					<div class="row">
+						<div class="span8">
+							<div class="contactus">
+								<i class="con-logo" aria-hidden="true"></i>
+								<a
+									href="/contactus_cn.html"
+									style="font-weight: bolder; color: #000000"
+									target="_blank"
+								>
+									<span
+										class="contact_us"
+										style="display: inline-block"
+									>
+										联系我们</span
+									>
+								</a>
+							</div>
+						</div>
+						<div
+							class="span3"
+							style="
+								max-height: 35px;
+								width: 14em;
+								float: right;
+								text-align: right;
+							"
+						>
+							<a
+								href="?locale=en_US"
+								style="
+									font-weight: bolder;
+									font-size: 14px;
+									padding-top: 0.5em;
+									display: inline-block;
+								"
+								><i
+									class="icon-globe"
+									style="
+										vertical-align: baseline;
+										display: inline-block;
+										margin-top: 3px;
+									"
+								></i>
+								<span
+									style="
+										padding-top: -3px;
+										display: inline-block;
+									"
+									>English</span
+								>
+								Version</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="visible-phone"
+				style="background: #f5f5f5; max-height: 12em; padding: 0.5em"
+			>
+				<div class="container" style="max-width: 1050px">
+					<div class="row">
+						<div class="span8">
+							<div class="contactus">
+								<i class="con-logo" aria-hidden="true"></i>
+								<a
+									href="/contactus_cn.html"
+									style="font-weight: bolder; color: #000000"
+									target="_blank"
+								>
+									<span
+										class="contact_us"
+										style="display: inline-block"
+									>
+										联系我们</span
+									>
+								</a>
+							</div>
+						</div>
+						<div
+							class="span3"
+							style="max-height: 35px; width: 14em"
+						>
+							<a
+								href="?locale=en_US"
+								style="
+									font-weight: bolder;
+									font-size: 14px;
+									display: inline-block;
+								"
+								><i
+									class="icon-globe"
+									style="
+										vertical-align: baseline;
+										display: inline-block;
+										margin-top: 3px;
+									"
+								></i>
+								<span
+									style="
+										margin-top: -8px;
+										display: inline-block;
+									"
+									>English Version</span
+								></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="headerN2" style="background: #fff">
+				<div class="container" style="max-width: 1050px">
+					<div
+						class="row"
+						style="
+							position: relative;
+							padding: 0.5em 0;
+							z-index: 999;
+						"
+					>
+						<div
+							class="span4"
+							align="left"
+							style="position: relative; padding: 0.5em"
+						>
+							<div style="width: 350px">
+								<div style="width: 65px; display: inline-block">
+									<a
+										href="http://www.neea.cn"
+										class="neealog_sty"
+									></a>
+								</div>
+								<div style="display: inline-block">
+									<a
+										href="http://www.ets.org/toefl"
+										target="_blank"
+										class="etslogo_sty"
+									></a>
+								</div>
+							</div>
+							<span
+								style="
+									left: 14px;
+									top: 60px;
+									margin-left: 0em;
+									margin-top: -0.5em;
+									letter-spacing: 1px;
+									width: 19em;
+									display: block;
+									font-size: 14px;
+									font-weight: bolder;
+									color: #000000;
+								"
+								>教育部教育考试院托福网考<sup>®</sup>考试报名</span
+							>
+						</div>
+						<div class="span6" style="text-align: right">
+							<div class="nav1_en hidden-phone">
+								<ul>
+									<li style="padding-left: 1em">
+										<a href="#" id="btnReturn">
+											<i></i>
+											<span>首页</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="/examination_reg_cn.html"
+											target="_blank"
+										>
+											<i></i>
+											<span>考试报名</span>
+										</a>
+										<div
+											class="slidDown"
+											style="display: none; opacity: 1"
+										>
+											<a
+												href="/information_cn.html"
+												target="_blank"
+												>考生须知</a
+											>
+											<a
+												href="/process_cn.html"
+												target="_blank"
+												>报名流程</a
+											>
+											<a
+												href="/testCenters"
+												target="_blank"
+												>考点列表</a
+											>
+										</div>
+									</li>
+									<li>
+										<a
+											href="/resources_cn.html"
+											target="_blank"
+										>
+											<i></i>
+											<span>备考资源</span>
+										</a>
+										<div
+											class="slidDown"
+											style="display: none; opacity: 1"
+										>
+											<a
+												href="http://www.toefl.cn/prep-material.php"
+												target="_blank"
+												>备考资源</a
+											>
+											<a
+												href="http://www.toefl.cn"
+												target="_blank"
+												>托福网考<sup>®</sup>官网</a
+											>
+											<a
+												href="https://www.toeflgoanywhere.org/search-who-accepts-toefl"
+												target="_blank"
+												>目的地查询</a
+											>
+										</div>
+									</li>
+
+									<li>
+										<a href="/faq_cn.html" target="_blank">
+											<i></i>
+											<span>常见问题</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="/download_cn.html"
+											target="_blank"
+										>
+											<i></i>
+											<span>表格下载</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div
+								class="main visible-phone"
+								align="left"
+								style="margin-top: 1em"
+							>
+								<nav id="menu" class="nav_bar">
+									<ul>
+										<li>
+											<a
+												href="/examination_reg_cn.html"
+												target="_blank"
+												><span>考试报名</span></a
+											>
+										</li>
+										<li>
+											<a
+												href="/resources_cn.html"
+												target="_blank"
+												><span>备考资源</span></a
+											>
+										</li>
+										<li>
+											<a
+												href="/faq_cn.html"
+												target="_blank"
+												><span>常见问题</span></a
+											>
+										</li>
+										<li>
+											<a
+												href="/download_cn.html"
+												target="_blank"
+												><span>表格下载</span></a
+											>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script
+				type="text/javascript"
+				src="/static/toefl/js/menu.min.js"
+			></script>
+			<script type="application/javascript">
+				$(function () {
+					$('[data-toggle="popover"]').popover({
+						trigger: 'hover',
+						html: true,
+						content: function () {
+							return '<img src="/static/toefl/images/qrcode.png" width="160" height="163"/>'
+						},
+					})
+
+					$('[data-toggle="popover1"]').popover({
+						trigger: 'hover',
+						html: true,
+						content: function () {
+							return '<img src="/static/toefl/images/wbcode.png" width="160" height="159"/>'
+						},
+					})
+					$('#btnReturn').click(function () {
+						window.location.href = '/'
+					})
+				})
+			</script>
+		</div>
+		<div class="banner hidden-phone" style="background: #9196ff">
+			<div class="container" align="center">
+				<div class="row-fluid con-width" style="position: relative">
+					<div
+						id="myCarousel"
+						class="carousel slide mobile_none"
+						style="padding: 0; margin: 0px"
+					>
+						<ol
+							class="carousel-indicators new_posi mobile1_none"
+						></ol>
+						<div class="carousel-inner mobile1_none">
+							<div class="item active ad1_bg"></div>
+						</div>
+					</div>
+					<div class="login_box" align="center">
+						<div id="cal-admin-date" lay-key="1">
+							<div
+								id="layui-laydate1"
+								class="layui-laydate layui-laydate-static laydate-theme-molv"
+							>
+								<div
+									class="layui-laydate-main laydate-main-list-0"
+								>
+									<div class="layui-laydate-header">
+										<i
+											class="layui-icon laydate-icon laydate-prev-y"
+											></i
+										><i
+											class="layui-icon laydate-icon laydate-prev-m"
+											></i
+										>
+										<div class="laydate-set-ym">
+											<span
+												lay-ym="2025-10"
+												lay-type="year"
+												>2025年</span
+											><span
+												lay-ym="2025-10"
+												lay-type="month"
+												>10月</span
+											>
+										</div>
+										<i
+											class="layui-icon laydate-icon laydate-next-m"
+											></i
+										><i
+											class="layui-icon laydate-icon laydate-next-y"
+											></i
+										>
+									</div>
+									<div class="layui-laydate-content">
+										<table>
+											<thead>
+												<tr>
+													<th>日</th>
+													<th>一</th>
+													<th>二</th>
+													<th>三</th>
+													<th>四</th>
+													<th>五</th>
+													<th>六</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td
+														class="laydate-day-prev laydate-disabled"
+														lay-ymd="2025-9-28"
+													>
+														28
+													</td>
+													<td
+														class="laydate-day-prev laydate-disabled"
+														lay-ymd="2025-9-29"
+													>
+														29
+													</td>
+													<td
+														class="laydate-day-prev laydate-disabled"
+														lay-ymd="2025-9-30"
+													>
+														30
+													</td>
+													<td
+														lay-ymd="2025-10-1"
+														class="laydate-disabled"
+													>
+														1
+													</td>
+													<td
+														lay-ymd="2025-10-2"
+														class="laydate-disabled"
+													>
+														2
+													</td>
+													<td
+														lay-ymd="2025-10-3"
+														class="laydate-disabled"
+													>
+														3
+													</td>
+													<td
+														lay-ymd="2025-10-4"
+														class="laydate-disabled"
+													>
+														4
+													</td>
+												</tr>
+												<tr>
+													<td
+														lay-ymd="2025-10-5"
+														class="laydate-disabled"
+													>
+														5
+													</td>
+													<td
+														class="layui-this laydate-disabled"
+														lay-ymd="2025-10-6"
+													>
+														6
+													</td>
+													<td
+														lay-ymd="2025-10-7"
+														class="laydate-disabled"
+													>
+														7
+													</td>
+													<td
+														lay-ymd="2025-10-8"
+														class="laydate-disabled"
+													>
+														8
+													</td>
+													<td
+														lay-ymd="2025-10-9"
+														class="laydate-disabled"
+													>
+														9
+													</td>
+													<td
+														lay-ymd="2025-10-10"
+														class="laydate-disabled"
+													>
+														10
+													</td>
+													<td
+														lay-ymd="2025-10-11"
+														class=""
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+												</tr>
+												<tr>
+													<td
+														lay-ymd="2025-10-12"
+														class=""
+													>
+														12
+													</td>
+													<td
+														lay-ymd="2025-10-13"
+														class=""
+													>
+														13
+													</td>
+													<td
+														lay-ymd="2025-10-14"
+														class=""
+													>
+														14
+													</td>
+													<td
+														lay-ymd="2025-10-15"
+														class=""
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+													<td
+														lay-ymd="2025-10-16"
+														class=""
+													>
+														16
+													</td>
+													<td
+														lay-ymd="2025-10-17"
+														class=""
+													>
+														17
+													</td>
+													<td
+														lay-ymd="2025-10-18"
+														class=""
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+												</tr>
+												<tr>
+													<td
+														lay-ymd="2025-10-19"
+														class=""
+													>
+														19
+													</td>
+													<td
+														lay-ymd="2025-10-20"
+														class=""
+													>
+														20
+													</td>
+													<td
+														lay-ymd="2025-10-21"
+														class=""
+													>
+														21
+													</td>
+													<td
+														lay-ymd="2025-10-22"
+														class=""
+													>
+														22
+													</td>
+													<td
+														lay-ymd="2025-10-23"
+														class=""
+													>
+														23
+													</td>
+													<td
+														lay-ymd="2025-10-24"
+														class=""
+													>
+														24
+													</td>
+													<td
+														lay-ymd="2025-10-25"
+														class=""
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+												</tr>
+												<tr>
+													<td
+														lay-ymd="2025-10-26"
+														class=""
+													>
+														26
+													</td>
+													<td
+														lay-ymd="2025-10-27"
+														class=""
+													>
+														27
+													</td>
+													<td
+														lay-ymd="2025-10-28"
+														class=""
+													>
+														28
+													</td>
+													<td
+														lay-ymd="2025-10-29"
+														class=""
+													>
+														29
+													</td>
+													<td
+														lay-ymd="2025-10-30"
+														class=""
+													>
+														30
+													</td>
+													<td
+														lay-ymd="2025-10-31"
+														class=""
+													>
+														31
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-1"
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+												</tr>
+												<tr>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-2"
+													>
+														2
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-3"
+													>
+														3
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-4"
+													>
+														4
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-5"
+													>
+														5
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-6"
+													>
+														6
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-7"
+													>
+														7
+													</td>
+													<td
+														class="laydate-day-next"
+														lay-ymd="2025-11-8"
+													>
+														<span
+															class="laydate-day-mark"
+															>福</span
+														>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="layui-laydate-footer">
+									<div class="laydate-footer-tips">
+										<span style="color: #343579">福</span>:
+										托福网考<sup>®</sup>考试日
+									</div>
+									<div class="laydate-footer-btns"></div>
+								</div>
+								<style>
+									#layui-laydate1 .layui-laydate-header {
+										background-color: #343579;
+									}
+									#layui-laydate1 .layui-this {
+										background-color: #343579 !important;
+									}
+								</style>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_g hidden-phone" align="center">
+			<div class="container" style="max-width: 1050px">
+				<div class="row-fluid con-width small">
+					<div class="span8" align="left" style="color: #000000">
+						凭借 托福网考<sup>&reg;</sup>
+						分数，追求您的梦想，走向世界各地吧
+					</div>
+					<div class="span4" align="right">
+						<a href="/login.html" class="footer_butt">登录</a
+						><a href="/profile/homepage" class="footer_butt_sign_up"
+							>注册新用户</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_g1 visible-phone" align="center">
+			<div class="container" style="max-width: 1050px">
+				<div class="row-fluid con-width" align="left">
+					<div class="span10">
+						凭借 托福网考
+						<sup>&reg;</sup> 分数，追求您的梦想，走向世界各地吧
+					</div>
+					<div style="height: 10px"></div>
+					<div class="span4">
+						<a href="/login.html" class="footer_butt btn-block">登录</a
+						><a
+							href=""
+							class="footer_butt_sign_up btn-block"
+							>注册新用户</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modular2"
+			align="center"
+			style="position: relative; background: #b6b9ff; margin-top: 15em"
+		>
+			<div class="OnlineService_Bg">
+				<div class="OnlineService_Box">
+					<div class="OnlineService_Phone">
+						<a
+							href="https://aics.neea.cn/customerchat/index?projectcode=B99D9A61218145AEA8074EBD989C8B26"
+							target="_blank"
+							title="点击打开在线客服咨询网站（考生咨询版）"
+							>在线客服</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="max-width: 1050px">
+				<div class="row-fluid">
+					<div class="span3 main_info_top0">
+						<div class="img">
+							<img
+								src="/static/toefl/images/xz.png"
+								alt="考生须知"
+							/>
+						</div>
+						<div class="text">
+							<div style="text-align: left">
+								<h4>考生须知</h4>
+							</div>
+							<div class="info">
+								<p>
+									报名前和考试前必读！了解考前考中考后各类注意事项、相关要求以及考场规则。
+								</p>
+							</div>
+							<a
+								href="information_cn.html"
+								target="_blank"
+								class="move"
+								>了解考生须知>></a
+							>
+						</div>
+					</div>
+					<div class="span3 main_info_top">
+						<div class="img">
+							<img
+								src="/static/toefl/images/jy.png"
+								alt="备考经验"
+							/>
+						</div>
+						<div class="text">
+							<div style="text-align: left">
+								<h4>备考经验</h4>
+							</div>
+							<div class="info">
+								<p>
+									从0到1——备考到申请，这里有万千通过托福网考<sup
+										>&reg;</sup
+									>
+									成绩拿到心仪offer的学姐学长，给你分享最真诚的备考建议和申请经验。
+								</p>
+							</div>
+							<a
+								href="http://www.toefl.cn/dream-story.php?sub=备考经验"
+								target="_blank"
+								class="move"
+								>查看备考经验>></a
+							>
+						</div>
+					</div>
+					<div class="span3 main_info_top">
+						<div class="img">
+							<img
+								src="/static/toefl/images/zy.png"
+								alt="备考资源"
+							/>
+						</div>
+						<div class="text">
+							<div style="text-align: left">
+								<h4>备考资源</h4>
+							</div>
+							<div class="info">
+								<p>
+									托福网考<sup>&reg;</sup>
+									是一项广受好评的英语语言专业测试，帮助了数以百万计像您一样的学生进入全球讲英语的学院学习。
+								</p>
+							</div>
+							<a
+								href="http://www.toefl.cn/dream-story.php?sub=备考经验"
+								target="_blank"
+								class="move"
+								>备考资源>></a
+							>
+						</div>
+					</div>
+					<div class="span3 main_info_top1">
+						<div class="img">
+							<img src="/static/toefl/images/gg.png" alt="公告" />
+						</div>
+						<div class="text">
+							<div style="text-align: left">
+								<h4>公告</h4>
+							</div>
+							<div
+								class="info"
+								style="padding: 0; margin: 0; height: 200px"
+								id="newslist"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="wg_footer" align="center">
+			<div
+				style="
+					height: 26px;
+					background: #f7f7f7;
+					height: 100%;
+					border-top: 8px solid #dadcff;
+				"
+				align="center"
+			></div>
+			<div class="container" style="background: #fff; padding: 2em 0px">
+				<div class="row-fluid">
+					<div class="span10 offset1" style="padding: 0 0em">
+						<div class="row">
+							<div class="span3 men2">
+								<a
+									href="/examination_reg_cn.html"
+									target="_blank"
+									>考试报名</a
+								>
+							</div>
+							<div class="span3 men3">
+								<a href="/resources_cn.html" target="_blank"
+									>备考资源</a
+								>
+							</div>
+							<div class="span3 men1">
+								<a href="/faq_cn.html" target="_blank"
+									>常见问题</a
+								>
+							</div>
+							<div class="span3 men6">
+								<a href="/download_cn.html" target="_blank"
+									>表格下载</a
+								>
+							</div>
+						</div>
+						<hr />
+						<span
+							style="
+								display: inline-block;
+								font-size: 14px;
+								font-weight: bold;
+								margin-bottom: 1em;
+							"
+							>关注托福:
+						</span>
+
+						<div
+							class="wx_bg"
+							style="
+								margin-left: 0em;
+								display: inline-block;
+								vertical-align: middle;
+							"
+						>
+							<a
+								href="#"
+								data-toggle="popover"
+								data-trigger="focus"
+								data-placement="right"
+								data-original-title=""
+								title=""
+								><img
+									data-src="/static/bootstrap/assets/holder.min.js/300*200"
+									src=""
+									class="img-circle"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div
+							style="
+								display: inline-block;
+								border-left: 1px solid #000;
+								height: 16px;
+							"
+						></div>
+						<div
+							class="xhs_bg"
+							style="
+								margin-left: 0em;
+								display: inline-block;
+								vertical-align: middle;
+							"
+						>
+							<a
+								href="#"
+								data-toggle="popover1"
+								data-trigger="focus"
+								data-placement="right"
+								data-original-title=""
+								title=""
+								><img
+									data-src="/static/bootstrap/assets/holder.min.js/300*200"
+									src=""
+									class="img-circle"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div
+							style="
+								display: inline-block;
+								border-left: 1px solid #000;
+								height: 16px;
+							"
+						></div>
+						<div
+							class="blb_bg"
+							style="
+								margin-left: 0em;
+								display: inline-block;
+								vertical-align: middle;
+							"
+						>
+							<a
+								href="#"
+								data-toggle="popover1"
+								data-trigger="focus"
+								data-placement="right"
+								data-original-title=""
+								title=""
+								><img
+									data-src="/static/bootstrap/assets/holder.min.js/300*200"
+									src=""
+									class="img-circle"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div
+							style="
+								display: inline-block;
+								border-left: 1px solid #000;
+								height: 16px;
+							"
+						></div>
+						<div
+							class="dy_bg"
+							style="
+								margin-left: 0em;
+								display: inline-block;
+								vertical-align: middle;
+							"
+						>
+							<a
+								href="#"
+								data-toggle="popover1"
+								data-trigger="focus"
+								data-placement="right"
+								data-original-title=""
+								title=""
+								><img
+									data-src="/static/bootstrap/assets/holder.min.js/300*200"
+									src=""
+									class="img-circle"
+									alt=""
+								/>
+							</a>
+						</div>
+						<div style="height: 2em"></div>
+						<div align="center">
+							<div class="row-fluid" style="width: 100%">
+								<div>
+									Copyright © 2025 ETS. TOEFL, TOEFL iBT,
+									托福，托福网考 and MYBEST are registered
+									trademarks of ETS in the United States and
+									other countries. The Eight-Point logo and
+									TOEFL TestReady are trademarks of ETS.
+								</div>
+								<div>
+									All are used under license in the People's
+									Republic of China by the National Education
+									Examination Authority pursuant to a license
+									from Educational Testing Service.<strong
+										>教育部教育考试院版权所有
+										保留所有权利</strong
+									><span style="padding-left: 2em"
+										>Powered By: SIQ176ZI</span
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="application/javascript">
+				$(function () {
+					$('[data-toggle="popover"]').popover({
+						trigger: 'hover',
+						html: true,
+						content: function () {
+							return '<img src="/static/toefl/images/qrcode.png" width="160" height="163"/>'
+						},
+					})
+
+					$('[data-toggle="popover1"]').popover({
+						trigger: 'hover',
+						html: true,
+						content: function () {
+							return '<img src="/static/toefl/images/wbcode.png" width="160" height="159"/>'
+						},
+					})
+				})
+			</script>
+		</div>
+		<script
+			type="text/javascript"
+			src="/static/jquery/jquery-1.12.4.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/jquery-migrate-1.4.1.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/bootstrap/js/bootstrap.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/bootstrap/js/bootstrap-better-typeahead.min.js"
+		></script>
+		<!--[if lt IE 9]>
+			<script src="/static/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+		<script
+			type="text/javascript"
+			src="/static/bootstrap/datetimepicker/js/bootstrap-datetimepicker.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/bootstrap/datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/layer/layer.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/scrolltofixed/jquery-scrolltofixed.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/jquery.formatCurrency.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/jquery.formatCurrency.zh.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/autoScroll.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/hashchange/jquery.hashchange.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/validation/jquery.validate.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/smallpop/jquery.smallipop.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/jsrender/jsrender.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/extends/moment/moment.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/extends/moment/moment-with-locales.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/msg_cn.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/msg_en.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/base.min.js?_v=1539364268775"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/passwordStrength.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/responsive-tabs/responsive.tabs.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/toefl/js/scrollBoard.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/laydate/laydate.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/bootstrap/table/bootstrap-table.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/fileupload/vendor/jquery.ui.widget.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/fileupload/jquery.iframe-transport.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/static/jquery/fileupload/jquery.fileupload.min.js"
+		></script>
+
+		<script type="application/javascript">
+			$(function () {
+				$('#newslist').load('/newsList')
+
+				$('.carousel').carousel({
+					interval: 11500,
+				})
+				$('#wg_banner').carousel()
+
+				var markDate = ''
+				var minDate = ''
+				var maxDate = ''
+				$.getJSON('queryAdminDate', function (data) {
+					$.each(data, function (key, value) {
+						if (key == 'minDate_maxDate') {
+							minDate = value.split('_')[0]
+							maxDate = value.split('_')[1]
+							return false
+						}
+					})
+					markDate = data
+					laydate.render({
+						elem: '#cal-admin-date',
+						position: 'static',
+						type: 'date',
+						theme: '#343579',
+						color: '#000000',
+						btns: [],
+						min: minDate,
+						max: maxDate,
+						mark: markDate,
+						class: 'custom-date-picker',
+					})
+				})
+				loadPageWidget('topper', '#wg_topper', true)
+				loadPageWidget('footer', '#wg_footer', true)
+			})
+		</script>
+	</body>
+</html>
