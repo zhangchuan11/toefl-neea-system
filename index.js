@@ -1,8 +1,7 @@
 /**
- * 阿里云函数计算 - 完整应用（配合API网关使用）
+ * Express应用 - 支持Vercel部署
  */
 
-const serverless = require('serverless-http');
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
@@ -97,11 +96,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// 使用 serverless-http 包装
-const handler = serverless(app);
-
-// 导出 handler
-module.exports.handler = handler;
+// 导出 Express 应用给 Vercel
+module.exports = app;
 
 // 本地开发模式
 if (require.main === module) {
